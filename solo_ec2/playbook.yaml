@@ -1,0 +1,9 @@
+---
+- hosts: rundeck
+  gather_facts: yes
+  tasks:
+    - name: ec2 facts
+      action:  ec2_facts
+    - name: command
+      action: command echo "ec2 facts tests"
+      when_string: $ansible_ec2_profile == "default-paravirtual"
