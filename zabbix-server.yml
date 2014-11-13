@@ -1,0 +1,6 @@
+---
+- hosts: all
+  sudo: True
+  user: ec2-user
+  roles:
+    - ansible-zabbix-server
