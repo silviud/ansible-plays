@@ -15,8 +15,11 @@ Create `hosts` file with the content::
 
 
 Make a directory `mkdir ~/.ansible`
+
 Download the inventory script `wget -O ~/.ansible/ec2.py https://raw.github.com/ansible/ansible/devel/plugins/inventory/ec2.py`
+
 Download the configuration for the inventory script `wget -O ~/.ansible/ec2.ini https://raw.github.com/ansible/ansible/devel/plugins/inventory/ec2.ini` 
+
 Make executable `chmod +x ~/.ansible/ec2.py`. 
 
 Install aws tools `pip awscli`, this comes with `boto` which is a python library to call the AWS library.
