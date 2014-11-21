@@ -1,0 +1,23 @@
+---
+# provision into aws classic cloud
+- name: provision in aws
+  hosts: localhost
+  gather_facts: False
+
+  tasks:
+    - name: provision into aws classic
+      local_action: 
+        module: ec2 
+        region: us-east-1 
+        image: ami-9a6ed3f2 
+        keypair: sdicu 
+        instance_type: m1.small 
+        group: sdicu 
+        count: 1 
+        wait: yes 
+        instance_tags:
+            Name: zabbix-test-server
+            role: monitoring
+      register: ec2_info
+
+    - debug: var=ec2_info

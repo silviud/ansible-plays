@@ -1,0 +1,3 @@
+---
+ansible_zabbix_agent_server: localhost
+ansible_zabbix_agent_server_active: localhost
