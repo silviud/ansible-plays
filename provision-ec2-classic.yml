@@ -5,9 +5,9 @@
   gather_facts: False
   vars:
     image: "ami-9a6ed3f2"
-    keypair: "sdicu"
+    keypair: "xxx"
     instance_type: "m1.small"
-    group: "sdicu"
+    group: "xxx"
 
   tasks:
     - name: provision into aws classic

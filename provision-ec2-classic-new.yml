@@ -10,9 +10,9 @@
         module: ec2 
         region: us-east-1 
         image: ami-9a6ed3f2 
-        keypair: sdicu 
+        keypair: xx 
         instance_type: m1.small 
-        group: sdicu 
+        group: xx 
         count: 1 
         wait: yes 
         instance_tags:
